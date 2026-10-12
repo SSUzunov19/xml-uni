@@ -1,0 +1,15 @@
+# Зависимости и build
+node_modules/
+dist/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Архиви с изходните материали
+*.zip
+
+# Системни
+.DS_Store

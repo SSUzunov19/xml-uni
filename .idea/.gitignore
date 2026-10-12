@@ -1,0 +1,7 @@
+# Лични настройки на IDE-то
+/shelf/
+/workspace.xml
+/usage.statistics.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml

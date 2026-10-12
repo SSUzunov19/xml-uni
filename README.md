@@ -19,6 +19,8 @@
 .
 ├── 01-su-faculties-map/   # Задача 1 — условие, приложение и решение
 ├── notes/                 # Бележки по темите от курса
+├── schemas/               # Официални XSD схеми (KML 2.2) за валидация
+├── .idea/                 # Споделени настройки и run конфигурации за IntelliJ IDEA
 └── README.md
 ```
 
@@ -38,6 +40,20 @@ npm run test:install   # инсталира браузъра за Playwright (Ch
 npm start              # стартира приложението на http://localhost:5173/
 npm test               # пуска тестовете (с интерфейс: npm test -- --ui)
 ```
+
+## IntelliJ IDEA
+
+Проектът се отваря директно: **File → Open…** и избирате папката на хранилището.
+
+- **Run конфигурации** (горе вдясно): `01 install`, `01 test:install`, `01 start`, `01 test`.
+  Те пускат npm скриптовете на задача 1 и не изискват терминал.
+- **XML схеми**: пространството от имена на KML е свързано с локалната схема в
+  [`schemas/kml-2.2.0/`](schemas/). Така в `.kml` файловете работят автодовършването и
+  валидацията (**Tools → XML Actions → Validate**).
+- `node_modules`, `dist`, `test-results` и `playwright-report` са изключени от индексирането.
+- Форматирането следва [`.editorconfig`](.editorconfig) (4 интервала, UTF-8, LF).
+
+Изисква се Node.js интерпретатор: **Settings → Languages & Frameworks → Node.js**.
 
 ## Знания и бележки
 
